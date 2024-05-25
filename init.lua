@@ -118,6 +118,8 @@ vim.opt.clipboard = 'unnamedplus'
 -- Enable break indent
 vim.opt.breakindent = true
 
+vim.opt.wrap = false
+
 -- Save undo history
 vim.opt.undofile = true
 
@@ -156,6 +158,8 @@ vim.opt.scrolloff = 10
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
+
+vim.keymap.set('i', 'jk', '<Esc>')
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
